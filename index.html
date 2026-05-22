@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 Drill 2</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Heat Index Checker</h1>
+        <p>Enter temperature and humidity.</p>
+
+        <button class="btn btn-info mb-3" onclick="showInstructions()">
+            Instructions
+        </button>
+
+        <p id="instructions">
+            Type the temperature and humidity then click check.
+        </p>
+
+        <label>Temperature (°C)</label>
+        <input type="number" id="temp" class="form-control">
+
+        <br>
+
+        <label>Humidity (%)</label>
+        <input type="number" id="humidity" class="form-control">
+
+        <br>
+
+        <button class="btn btn-primary" onclick="checkHeatIndex()">
+            Check Heat Index
+        </button>
+
+        <br>
+        <br>
+
+        <div id="result"></div>
+
+        <br>
+
+        <a href="https://www.weather.gov/" target="_blank">
+            NOAA Source
+        </a>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
